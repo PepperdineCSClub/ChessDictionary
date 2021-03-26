@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ChessDictionary</string>
+    <string name="rook_title">Rook</string>
+    <string name="show_hide_image">Show/Hide Image</string>
+    <string name="description">Description:</string>
+    <string name="default_rook_description">Moves horizontally or vertically, through any number of unoccupied squares</string>
 </resources>

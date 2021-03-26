@@ -16,5 +16,16 @@ class MainActivity : AppCompatActivity() {
         binding.goToPawnPageButton.setOnClickListener {
             startActivity(Intent(this, PawnActivity::class.java))
         }
+
+        //Set the 'rook' button onClickListener
+        binding.goToRookPageButton.setOnClickListener {
+
+            //Create an intent to open the rook activity
+            val rookActivityIntent = Intent(this, RookActivity::class.java)
+
+            //Start the rook activity
+            startActivity(rookActivityIntent)
+
+        }
     }
 }
