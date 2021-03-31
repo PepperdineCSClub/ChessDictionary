@@ -27,5 +27,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(rookActivityIntent)
 
         }
+        binding.goToQueenPageButton.setOnClickListener {
+            startActivity(Intent(this, QueenActivity::class.java))
+        }
     }
 }
