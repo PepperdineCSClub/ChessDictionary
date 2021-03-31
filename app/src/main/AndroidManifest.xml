@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
-        <activity android:name=".RookActivity"></activity>
+        <activity
+            android:name=".QueenActivity"
+            android:label="@string/title_activity_queen"
+            android:theme="@style/NoActionBar"></activity>
+        <activity android:name=".RookActivity" />
         <activity android:name=".PawnActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
