@@ -6,4 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".PawnActivity">
 
+    <ImageView
+        android:id="@+id/whitepawn_image"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/ic_whitepawn"
+        android:contentDescription="@null"
+        app:layout_constraintTop_toBottomOf="@id/pawn_text"
+        app:layout_constraintBottom_toTopOf=""
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/pawn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:text="PAWN"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/explanation_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/explanation_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:text="The least powerful chess piece, the pawn moves
+forward one square at a time, and captures by moving one square
+diagonally forward or right. However, a pawn that advances all the way to the opposite side of the
+board is promoted to another piece of that player's choice"
+        app:layout_constraintTop_toBottomOf="@+id/whitepawn_image"
+        app:layout_constraintBottom_toTopOf=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
